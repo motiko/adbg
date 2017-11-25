@@ -3,9 +3,12 @@ var path = require("path")
 var bodyParser = require("body-parser")
 var mongodb = require("mongodb")
 var ObjectID = mongodb.ObjectID
+var cors = require('cors')
+
 
 var app = express()
 app.use(bodyParser.json())
+app.use(cors())
 
 var db
 
